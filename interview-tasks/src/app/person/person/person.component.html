@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Persons</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content fxLayout="column" fxLayoutAlign="center start">
+    <p *ngFor="let person of persons">{{person.surName}} {{person.lastName}}, születési éve: {{person.birthYear}}, {{person.getAge()}} éves, {{person.isAgePrime() ? 'prímszám' : 'nem prímszám'}} </p>
+  </mat-card-content>
+</mat-card>

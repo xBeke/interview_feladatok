@@ -1,0 +1,28 @@
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  background-color: #929292;
+}
+
+mat-card-title {
+  color: black;
+}
+
+.textInput {
+  width: 220px;
+  height: 50px;
+}
+
+.display {
+  width: 220px;
+  height: 30px;
+  margin: 2em auto;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.math {
+  color:black;
+  font-size: large;
+}

@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Calculator</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="display">
+      <mat-card-content>
+        <p class="math">{{equation}}</p>
+      </mat-card-content>
+    </mat-card>
+  </mat-card-content>
+
+  <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button (click)="addToEquation('7')">7</button>
+    <button mat-raised-button (click)="addToEquation('8')">8</button>
+    <button mat-raised-button (click)="addToEquation('9')">9</button>
+    <button mat-raised-button (click)="addToEquation('+')">+</button>
+  </mat-card-content>
+
+  <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button (click)="addToEquation('4')">4</button>
+    <button mat-raised-button (click)="addToEquation('5')">5</button>
+    <button mat-raised-button (click)="addToEquation('6')">6</button>
+    <button mat-raised-button (click)="addToEquation('-')">-</button>
+  </mat-card-content>
+
+  <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button (click)="addToEquation('1')">1</button>
+    <button mat-raised-button (click)="addToEquation('2')">2</button>
+    <button mat-raised-button (click)="addToEquation('3')">3</button>
+    <button mat-raised-button (click)="addToEquation('/')">/</button>
+  </mat-card-content>
+
+  <mat-card-content fxLayout="row" fxLayoutAlign="center center">
+    <button mat-raised-button (click)="clearEquation()">C</button>
+    <button mat-raised-button (click)="addToEquation('0')">0</button>
+    <button mat-raised-button (click)="evaluateEquation()">=</button>
+    <button mat-raised-button (click)="addToEquation('*')">X</button>
+  </mat-card-content>
+</mat-card>

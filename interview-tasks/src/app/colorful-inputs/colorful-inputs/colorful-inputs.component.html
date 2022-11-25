@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Colorful input</mat-card-title>
+  </mat-card-header>
+  <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+    <input type="text" name="color" [(ngModel)] = "color" [ngStyle]="{'background-color': color }">
+  </mat-card-content>
+</mat-card>
